@@ -67,3 +67,4 @@ Branching strategy is the same as we did in our first intro exercises - feature 
 5. Assertions - from JUnit and org.assertj - see https://assertj.github.io/doc/
 
 6. Reporting - JBehave native reporter - Optional implement allure reporting
+# SeleniumPageFactory
