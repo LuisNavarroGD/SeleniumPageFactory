@@ -26,7 +26,7 @@ private static MyPageFactory pageFactory = MyPageFactoryProvider.getInstance();
 private HomePage homePage() { return pageFactory.on(HomePage.class); }
 
 public HomePageSteps acceptPrivacyModal() {
-    homePage().acceptPrivacyButton().waitUntil(displayed()).click()
+    homePage().acceptPrivacyButton().waitUntil(displayed()).click();
     return this;
 }
 ```

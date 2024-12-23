@@ -6,7 +6,7 @@ Testing Framework is a layer of abstraction that wraps in convenient user friend
 
 Web UI Testing framework needs to have:
 
-1. Abstraction - architecture - Page object model - see [Page Object Model (POM) & Page Factory in Selenium Tutorial](https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html), Driver provider classes and so on ...
+1. Abstraction - architecture - PageSteps object model - see [PageSteps Object Model (POM) & PageSteps Factory in Selenium Tutorial](https://www.guru99.com/page-object-model-pom-page-factory-in-selenium-ultimate-guide.html), Driver provider classes and so on ...
 2. Configurability - ability to run various tests with various setups from command line (important for running tests in a CI tool)
 3. Logging mechanism - convenient way of writing in console and log files what actually took place during test execution
 4. Reporting mechanism - way of representing test run results to the user

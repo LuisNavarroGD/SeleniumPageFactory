@@ -12,6 +12,8 @@ public class MyPageFactory {
     private final WebDriverFactory webDriverFactory;
     private final Properties properties;
 
+    private static MyPageFactory pageFactory = MyPageFactoryProvider.getInstance();
+
     public MyPageFactory() {
         this.webDriverFactory = new WebDriverFactory();
         this.properties = new Properties();

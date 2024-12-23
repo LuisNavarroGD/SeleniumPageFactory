@@ -41,7 +41,7 @@ public @interface IsAtPageMethod {
 
         private static String getLoadTimeoutDetails(final Object[] args) {
             String url = args != null && args.length > 0 ? String.valueOf(args[0]) : "Unknown";
-            return String.format("Page \"%s\" was not loaded within the timeout period!", url);
+            return String.format("PageSteps \"%s\" was not loaded within the timeout period!", url);
         }
 
         @SuppressWarnings("unchecked")
