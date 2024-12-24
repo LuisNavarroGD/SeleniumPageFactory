@@ -1,4 +1,4 @@
-package htmlelements;
+package htmlelements.Factory;
 
 public class MyPageFactoryProvider {
 

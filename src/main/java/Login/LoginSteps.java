@@ -1,8 +1,8 @@
 package Login;
 
 import Selenium.WebDriverFactory;
+import htmlelements.HomePage;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
 
-public class LoginSteps {
+public abstract class LoginSteps implements HomePage {
 
     private WebDriver driver;
     private WebDriverWait wait;
@@ -82,7 +82,6 @@ public class LoginSteps {
         } catch (Exception e) {
             System.out.println("Inicio de sesión exitoso.");
         }
-
 
         return this;
     }

@@ -1,4 +1,4 @@
-package htmlelements;
+package htmlelements.Factory;
 
 import Selenium.WebDriverFactory;
 import org.openqa.selenium.WebDriver;

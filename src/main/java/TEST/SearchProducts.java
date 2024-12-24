@@ -1,5 +1,6 @@
-package htmlelements;
+package TEST;
 
+import htmlelements.ExtendedWebPage;
 import io.qameta.htmlelements.annotation.Description;
 import io.qameta.htmlelements.annotation.FindBy;
 import org.openqa.selenium.By;

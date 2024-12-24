@@ -7,7 +7,6 @@ package htmlelements;
 
 import org.openqa.selenium.WebElement;
 
-
 public class MyWebElement  {
 
     private WebElement element;

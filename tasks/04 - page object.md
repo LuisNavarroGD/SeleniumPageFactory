@@ -7,7 +7,7 @@ Take a look at following files:
 * htmlelements.ExtendedMyWebElement
 * htmlelements.ExtendedWebPage
 * htmlelements.MyWebElement
-* htmlelements.MyPageFactory
-* htmlelements.MyPageFactoryProvider
+* htmlelements.Factory.MyPageFactory
+* htmlelements.Factory.MyPageFactoryProvider
 
 In the classes you will find couple of TODO comments, implement them.

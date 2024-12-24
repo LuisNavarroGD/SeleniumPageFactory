@@ -60,8 +60,8 @@ public class LoginTest {
 
     @Test
     public void testFunctionality6() {
-        new LoginSteps()
-                .openLoginPage()
+         new  LoginSteps()
+                 .openLoginPage()
                 .acceptCookies()
                 .closeModal()
                 .LogCredentials("", "");

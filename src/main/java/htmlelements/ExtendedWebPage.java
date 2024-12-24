@@ -14,7 +14,6 @@ public interface ExtendedWebPage {
     @IsAtPageMethod
     void isAtPage(Matcher<String> url);
 
-
     default void isAt(Matcher<String> url) {
         isAtPage(url);
     }

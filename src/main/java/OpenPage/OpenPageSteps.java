@@ -12,8 +12,8 @@ import java.time.Duration;
 
 public class OpenPageSteps {
 
-    private WebDriver driver;
-    private WebDriverWait wait;
+    private final WebDriver driver;
+    private final WebDriverWait wait;
 
     public OpenPageSteps() {
         this.driver = WebDriverFactory.get();
@@ -36,6 +36,7 @@ public class OpenPageSteps {
     public OpenPageSteps AccountIcon() {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
         System.out.println("Navegando a la creación de cuenta...");
+
         WebElement usernameLink = wait.until(ExpectedConditions.elementToBeClickable(
                 By.xpath("//a[@class='clickable qa-show-sidetray-account sidetray-account']")));
         try {
@@ -67,7 +68,7 @@ public class OpenPageSteps {
         // Esperar a que los productos sean cargados
         List<WebElement> products =
                 wait.until(ExpectedConditions.presenceOfAllElementsLocatedBy(By.xpath("//img[@data-test='product-image']")));
-        if (products.size() > 0) {
+        if (!products.isEmpty()) {
             System.out.println("Se encontraron " + products.size() + " productos.");
         } else {
             System.out.println("No se encontraron productos.");
@@ -81,7 +82,7 @@ public class OpenPageSteps {
 
         double totalPrice = 0.0; // Variable para almacenar la suma total de precios
 
-        if (productNames.size() > 0 && productPrices.size() > 0) {
+        if (!productNames.isEmpty() && !productPrices.isEmpty()) {
             System.out.println("Se encontraron " + productNames.size() + "productos: ");
 
             // Asegurarse de iterar hasta el menor tamaño de las listas
